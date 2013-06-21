@@ -1,0 +1,6 @@
+name: App
+permalink: /:categories/:title
+assets:
+  compress:
+    js:   uglifier
+    css:  sass

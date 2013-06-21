@@ -1,0 +1,89 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-size: 100%;
+  font-family: 'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  height: 100%;
+  position: relative;
+}
+
+header {
+  padding: 15px;
+  background: #333;
+
+  a {
+    color: white;
+    line-height: 30px;
+    @include inline-block;
+    margin: 0 15px;
+    text-decoration: none;
+    opacity: .75;
+    border-bottom: 1px solid transparent;
+
+    &:hover {
+      opacity: 1;
+      border-color: white;
+    }
+  }
+}
+
+h4 {
+  font-size: 1.5em;
+  font-weight: 500;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.container {
+  position: relative;
+  height: 100%;
+}
+
+aside {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 200px;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background: #eee;
+
+  a {
+    line-height: 24px;
+    display: block;
+
+    &.current {
+      background: #fff;
+    }
+  }
+}
+
+.content {
+  margin-left: 200px;
+  padding: 15px 30px;
+
+  li {
+    margin: 1px 0;
+
+    a {
+      line-height: 40px;
+      background: #eee;
+      padding: 0 1em;
+      display: block;
+    }
+  }
+}

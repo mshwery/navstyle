@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.name }}</title>
+    <meta name="viewport" content="width=device-width">
+
+    {% stylesheet app %}
+  </head>
+  <body>
+    <header>
+      <a href="/">Surveys</a>
+      <a href="/bids/buy">Bids</a>
+      <a href="#">Offerwall</a>
+      <a href="#">Reports</a>
+      <a href="#">Dashboard</a>
+    </header>
+
+    <div class="container">
+      {{ content }}
+    </div> <!-- /container -->
+  </body>
+</html>
